@@ -51,7 +51,7 @@ async function initialisePyodide(onProgress) {
 
     // Pre-load our convolution module so it's ready to call
     onProgress?.('Loading analysis modules…')
-    const convolutionCode = await fetch('/src/pyodide/convolution.py').then(r => r.text())
+    const convolutionCode = await fetch(`${import.meta.env.BASE_URL}src/pyodide/convolution.py`).then(r => r.text())
     await pyodide.runPythonAsync(convolutionCode)
 
     pyodideInstance = pyodide
