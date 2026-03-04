@@ -1,0 +1,714 @@
+{
+  "stars_catalogue": [
+    {
+      "stage": "1. Bob-omb Battlefield",
+      "stars": [
+        {
+          "name": "Big Bob-omb on the Summit",
+          "strategies": ["Standard", "Left side strat", "Other"],
+          "preset_groups": ["bob stage"]
+        },
+        {
+          "name": "Footrace with Koopa the Quick",
+          "strategies": ["Standard", "Other"],
+          "preset_groups": ["bob stage"]
+        },
+        {
+          "name": "Shoot to the Island in the Sky",
+          "strategies": ["Standard", "No camera glitch", "Slope slide strat", "Slope slide strat, no camera glitch", "Island hop w/ LJ firsty", "Other"],
+          "preset_groups": ["bob stage", "bob 70 ihop"]
+        },
+        {
+          "name": "Find the 8 Red Coins + 100c",
+          "strategies": ["Standard", "Other"],
+          "preset_groups": ["bob stage"]
+        },
+        {
+          "name": "Mario Wings to the Sky",
+          "strategies": ["Standard", "No camera glitch", "Slope slide strat", "Slope slide strat, no camera glitch", "Other"],
+          "preset_groups": ["bob stage"]
+        },
+        {
+          "name": "Behind Chain Chomp's Gate",
+          "strategies": ["Standard", "Backflip clip", "Slide + Backflip clip", "Other"],
+          "preset_groups": ["bob stage", "bob 70 ihop"]
+        }
+      ]
+    },
+    {
+      "stage": "2. Whomp's Fortress",
+      "stars": [
+        {
+          "name": "Chip off Whomp's Block",
+          "strategies": ["Standard", "Other"],
+          "preset_groups": ["wf stage", "wf 16 no lblj"]
+        },
+        {
+          "name": "To the Top of the Fortress",
+          "strategies": ["Standard", "Double jump -> Ledgegrab", "Other"],
+          "preset_groups": ["wf stage", "wf 16 no lblj"]
+        },
+        {
+          "name": "Shoot into the Wild Blue",
+          "strategies": ["Standard", "Single jump ending", "Single jump ending, no speedkick", "Other"],
+          "preset_groups": ["wf stage", "wf 16 no lblj", "wf 16 lblj"]
+        },
+        {
+          "name": "Red Coins on the Floating Isle + 100c",
+          "strategies": ["Standard", "8 coin ring first, ~41c wooden platform", "Other"],
+          "preset_groups": ["wf stage"]
+        },
+        {
+          "name": "Fall onto the Caged Island",
+          "strategies": ["Standard", "Double jump owlless", "Double jump owlless w/ stairs fence clip", "Owl strat w/o speed preservation", "Other"],
+          "preset_groups": ["wf stage", "wf 16 no lblj", "wf 16 lblj"]
+        },
+        {
+          "name": "Blast Away the Wall",
+          "strategies": ["Standard", "Texture setup", "Salt setup", "No setup (OG)", "Longjump", "Other"],
+          "preset_groups": ["wf stage", "wf 16 no lblj", "wf 16 lblj"]
+        }
+      ]
+    },
+    {
+      "stage": "3. Jolly Roger Bay",
+      "stars": [
+        {
+          "name": "Plunder in the Sunken Ship",
+          "strategies": ["Standard", "Punch ending", "Other"],
+          "preset_groups": ["jrb stage"]
+        },
+        {
+          "name": "Can the Eel Come Out to Play?",
+          "strategies": ["Standard", "Other"],
+          "preset_groups": ["jrb stage"]
+        },
+        {
+          "name": "Treasure of the Ocean Cave",
+          "strategies": ["Standard", "Other"],
+          "preset_groups": ["jrb stage"]
+        },
+        {
+          "name": "Red Coins on the Ship Afloat + 100c (WITH CANNON)",
+          "strategies": ["Standard", "Other"],
+          "preset_groups": ["jrb stage"]
+        },
+        {
+          "name": "Blast to the Stone Pillar",
+          "strategies": ["Standard", "Triple jump beginning", "Framewalk", "saksdal walk", "Other"],
+          "preset_groups": ["jrb stage"]
+        },
+        {
+          "name": "Through the Jet Stream",
+          "strategies": ["Standard", "Other"],
+          "preset_groups": ["jrb stage"]
+        }
+      ]
+    },
+    {
+      "stage": "4. Cool, Cool Mountain",
+      "stars": [
+        {
+          "name": "Slip Slidin' Away",
+          "strategies": ["Standard", "No ice bridge clip (Beginner strat)", "Other"],
+          "preset_groups": ["ccm stage", "ccm 70 slide", "ccm 70 race"]
+        },
+        {
+          "name": "Slip Slidin' Away + 100c",
+          "strategies": ["Standard", "No teleporter route", "Other"],
+          "preset_groups": ["ccm 70 slide"]
+        },
+        {
+          "name": "Li'l Penguin Lost",
+          "strategies": ["Standard", "Pingu trick", "Other"],
+          "preset_groups": ["ccm stage", "ccm 16 no lblj", "ccm 70 race", "ccm 70 slide"]
+        },
+        {
+          "name": "Big Penguin Race + 100c",
+          "strategies": ["Standard", "atmpas special route", "Other"],
+          "preset_groups": ["ccm stage", "ccm 70 race"]
+        },
+        {
+          "name": "Frosty Slide for 8 Red Coins",
+          "strategies": ["Standard", "Other"],
+          "preset_groups": ["ccm stage"]
+        },
+        {
+          "name": "Snowman's Lost His Head",
+          "strategies": ["Standard", "DJ dive -> JD beginning", "Slide -> SJ beginning", "Other"],
+          "preset_groups": ["ccm stage"]
+        },
+        {
+          "name": "Wall Kicks Will Work",
+          "strategies": ["Standard", "Other"],
+          "preset_groups": ["ccm stage", "ccm 16 no lblj", "ccm 70 race", "ccm 70 slide"]
+        }
+      ]
+    },
+    {
+      "stage": "5. Big Boo's Haunt",
+      "stars": [
+        {
+          "name": "Go on a Ghost Hunt",
+          "strategies": ["Standard", "First door skip", "Final door skip", "First + Final door skip", "Text skip (US)", "Other"],
+          "preset_groups": ["bbh stage"]
+        },
+        {
+          "name": "Ride Big Boo's Merry-Go-Round",
+          "strategies": ["Standard", "Double jump -> Dive strat", "Other"],
+          "preset_groups": ["bbh stage"]
+        },
+        {
+          "name": "Secret of the Haunted Books",
+          "strategies": ["Standard", "Wallkick off the right wall", "Other"],
+          "preset_groups": ["bbh stage", "bbh 70"]
+        },
+        {
+          "name": "Seek the 8 Red Coins + 100c",
+          "strategies": ["Standard", "Other"],
+          "preset_groups": ["bbh stage"]
+        },
+        {
+          "name": "Big Boo's Balcony",
+          "strategies": ["Standard", "Second hit w/ punch (Easier)", "Other"],
+          "preset_groups": ["bbh stage", "bbh 70"]
+        },
+        {
+          "name": "Eye to Eye in the Secret Room",
+          "strategies": ["Standard", "DJ kick box break strat", "Other"],
+          "preset_groups": ["bbh stage"]
+        }
+      ]
+    },
+    {
+      "stage": "6. Hazy Maze Cave",
+      "stars": [
+        {
+          "name": "Swimming Beast in the Cavern",
+          "strategies": ["Standard", "Sign clip strat (PAUSE TIME INCLUDED)", "Sign clip strat w/ BD (PAUSE TIME INCLUDED)", "Other"],
+          "preset_groups": ["hmc stage", "hmc 70", "hmc 16 lblj"]
+        },
+        {
+          "name": "Elevate for 8 Red Coins + 100c",
+          "strategies": ["Standard", "Other"],
+          "preset_groups": ["hmc 100"]
+        },
+        {
+          "name": "Metal-Head Mario Can Move!",
+          "strategies": ["Standard", "Full wallkick strat", "Other"],
+          "preset_groups": ["hmc stage", "hmc 70"]
+        },
+        {
+          "name": "Navigating the Toxic Maze",
+          "strategies": ["Standard", "Instant clip", "BLJless", "Other"],
+          "preset_groups": ["hmc stage"]
+        },
+        {
+          "name": "A-Maze-ing Emergency Exit",
+          "strategies": ["Standard", "Left side TJ", "Singlestar strat", "Other"],
+          "preset_groups": ["hmc stage", "hmc 70", "hmc 16 lblj"]
+        },
+        {
+          "name": "Watch for Rolling Rocks",
+          "strategies": ["Standard", "C-Up slide strat", "C-Up slide start (Right side)", "Other"],
+          "preset_groups": ["hmc stage", "hmc 70", "hmc 16 lblj"]
+        },
+        {
+          "name": "Fade of the CotMC entry",
+          "strategies": ["Standard", "Other"],
+          "preset_groups": ["hmc stage"]
+        }
+      ]
+    },
+    {
+      "stage": "7. Lethal Lava Land",
+      "stars": [
+        {
+          "name": "Boil the Big Bully",
+          "strategies": ["Standard", "Right side GP strat", "Double burn strat", "Other"],
+          "preset_groups": ["lll stage", "lll 70", "lll 16 lblj"]
+        },
+        {
+          "name": "Bully the Bullies",
+          "strategies": ["Standard", "No ledgegrab strat", "LJ onto sinking platform -> LJ -> JD", "Speedkick -> DJ dive onto sinking platform", "Other"],
+          "preset_groups": ["lll stage", "lll 70"]
+        },
+        {
+          "name": "8-Coin Puzzle with 15 Pieces",
+          "strategies": ["Standard", "Burn strat", "LJ x3 strat", "Other"],
+          "preset_groups": ["lll stage", "lll 70", "lll 16 lblj"]
+        },
+        {
+          "name": "Red-Hot Log Rolling",
+          "strategies": ["Standard", "Triple jump strat", "LJ x2 -> TJ ledgegrab (Capless)", "LJ -> JD -> TJ ledgegrab (Capless)", "Other"],
+          "preset_groups": ["lll stage", "lll 70", "lll 16 lblj"]
+        },
+        {
+          "name": "Hot-Foot-It into the Volcano",
+          "strategies": ["Standard", "No speed preservation", "Pole skip ending", "Pole skip ending, no speed preservation", "Akira boost", "Other"],
+          "preset_groups": ["lll 70"]
+        },
+        {
+          "name": "Hot-Foot-It into the Volcano + 100c",
+          "strategies": ["Standard", "Other"],
+          "preset_groups": ["lll stage"]
+        },
+        {
+          "name": "Elevator Tour in the Volcano",
+          "strategies": ["Standard", "Other"],
+          "preset_groups": ["lll stage", "lll 70", "lll 16 lblj"]
+        }
+      ]
+    },
+    {
+      "stage": "8. Shifting Sand Land",
+      "stars": [
+        {
+          "name": "In the Talons of the Big Bird",
+          "strategies": ["Standard", "Walk up the left side of the pillar", "Speed single jump -> Dive", "Speed single jump x2", "Flyguyless", "Other"],
+          "preset_groups": ["ssl stage", "ssl 70", "ssl 16 lblj"]
+        },
+        {
+          "name": "Shining atop the Pyramid",
+          "strategies": ["Standard", "Other"],
+          "preset_groups": ["ssl stage", "ssl 70", "ssl 16 lblj"]
+        },
+        {
+          "name": "Inside the Ancient Pyramid",
+          "strategies": ["Standard", "Single jump on the small hill", "Tama pless", "Other"],
+          "preset_groups": ["ssl stage", "ssl 70", "ssl 16 lblj"]
+        },
+        {
+          "name": "Stand Tall on the Four Pillars",
+          "strategies": ["Standard", "Other"],
+          "preset_groups": ["ssl stage"]
+        },
+        {
+          "name": "Free Flying for 8 Red Coins",
+          "strategies": ["Standard", "Get the pond red #3", "Z slide after the pond red", "Z slide, no speed jump before cap box", "Other"],
+          "preset_groups": ["ssl stage"]
+        },
+        {
+          "name": "Pyramid Puzzle",
+          "strategies": ["Standard", "Single jump on the small hill", "Tama pless", "Other"],
+          "preset_groups": ["ssl 70"]
+        },
+        {
+          "name": "Pyramid Puzzle + 100c",
+          "strategies": ["Standard", "Maze pillar early route", "Other"],
+          "preset_groups": ["ssl stage"]
+        }
+      ]
+    },
+    {
+      "stage": "9. Dire, Dire Docks",
+      "stars": [
+        {
+          "name": "Board Bowser's Sub",
+          "strategies": ["Standard", "Back sub", "Chip clip w/ punch + Front sub", "Other"],
+          "preset_groups": ["fs split 120", "ddd 70", "ddd 16"]
+        },
+        {
+          "name": "Chests in the Current",
+          "strategies": ["Standard", "Other"],
+          "preset_groups": ["fs split 120", "ddd 70"]
+        },
+        {
+          "name": "Pole-Jumping for Red Coins + 100c",
+          "strategies": ["Standard", "Other"],
+          "preset_groups": ["ddd 100"]
+        },
+        {
+          "name": "Through the Jet Stream",
+          "strategies": ["Standard", "Chip clip w/ punch", "[N64 REAL TIME] w/ sub", "Other"],
+          "preset_groups": ["ddd stage 2"]
+        },
+        {
+          "name": "The Manta Ray's Reward",
+          "strategies": ["Standard", "Other"],
+          "preset_groups": ["ddd stage 2", "ddd 70"]
+        },
+        {
+          "name": "Collect the Caps...",
+          "strategies": ["Standard", "Chip clip w/ punch", "[N64 REAL TIME] w/ sub", "Other"],
+          "preset_groups": ["ddd stage 2"]
+        }
+      ]
+    },
+    {
+      "stage": "10. Snowman's Land",
+      "stars": [
+        {
+          "name": "Snowman's Big Head",
+          "strategies": ["Standard", "Single jump strat", "Singlestar strat", "Other"],
+          "preset_groups": ["sl stage", "sl 70"]
+        },
+        {
+          "name": "Chill with the Bully",
+          "strategies": ["Standard", "Slidekick -> Crouch slide", "Other"],
+          "preset_groups": ["sl stage", "sl 70"]
+        },
+        {
+          "name": "In the Deep Freeze",
+          "strategies": ["Standard", "Triple jump strat", "Other"],
+          "preset_groups": ["sl stage", "sl 70"]
+        },
+        {
+          "name": "Whirl from the Freezing Pond",
+          "strategies": ["Standard", "Other"],
+          "preset_groups": ["sl stage", "sl 70"]
+        },
+        {
+          "name": "Shell Shreddin' for Red Coins",
+          "strategies": ["Standard", "Other"],
+          "preset_groups": []
+        },
+        {
+          "name": "Shell Shreddin' for Red Coins + 100c",
+          "strategies": ["Standard", "Pond spindrift early route", "Other"],
+          "preset_groups": ["sl stage"]
+        },
+        {
+          "name": "Into the Igloo",
+          "strategies": ["Standard", "w/ phantaxx/saksdal inside", "Igloo clip", "Igloo clip w/ phantaxx/saksdal inside", "Other"],
+          "preset_groups": ["sl stage"]
+        }
+      ]
+    },
+    {
+      "stage": "11. Wet-Dry World",
+      "stars": [
+        {
+          "name": "Shocking Arrow Lifts!",
+          "strategies": ["Standard", "Other"],
+          "preset_groups": ["wdw stage", "wdw 70"]
+        },
+        {
+          "name": "Top o' the Town",
+          "strategies": ["Standard", "Purple switch strat", "Other"],
+          "preset_groups": ["wdw stage", "wdw 70"]
+        },
+        {
+          "name": "Secrets in the Shallows & Sky",
+          "strategies": ["Standard", "Other"],
+          "preset_groups": ["wdw stage"]
+        },
+        {
+          "name": "Secrets in the Shallows & Sky + 100c",
+          "strategies": ["Standard", "Other"],
+          "preset_groups": ["wdw 70"]
+        },
+        {
+          "name": "Express Elevator--Hurry Up!",
+          "strategies": ["Standard", "Break box first", "Purple switch strat", "Other"],
+          "preset_groups": ["wdw stage", "wdw 70"]
+        },
+        {
+          "name": "Go to Town for Red Coins + 100c",
+          "strategies": ["Standard", "Other"],
+          "preset_groups": ["wdw stage"]
+        },
+        {
+          "name": "Quick Race Through Downtown!",
+          "strategies": ["Standard", "Clockwise strat", "Other"],
+          "preset_groups": ["wdw stage"]
+        }
+      ]
+    },
+    {
+      "stage": "12. Tall, Tall Mountain",
+      "stars": [
+        {
+          "name": "Scale the Mountain",
+          "strategies": ["Standard", "No edge water jump", "Log firsty", "Log firsty, no edge water jump", "Other"],
+          "preset_groups": ["ttm stage", "ttm 70"]
+        },
+        {
+          "name": "Mystery of the Monkey Cage",
+          "strategies": ["Standard", "No edge water jump", "Log firsty", "Log firsty, no edge water jump", "Other"],
+          "preset_groups": ["ttm stage"]
+        },
+        {
+          "name": "Scary 'Shrooms, Red Coins",
+          "strategies": ["Standard", "SJ onto first mushroom, go right after #4", "Other"],
+          "preset_groups": ["ttm 70"]
+        },
+        {
+          "name": "Scary 'Shrooms, Red Coins + 100c",
+          "strategies": ["Standard", "Late reds star spawn route", "Other"],
+          "preset_groups": ["ttm stage"]
+        },
+        {
+          "name": "Mysterious Mountainside",
+          "strategies": ["Standard", "Slowturn", "w/ breeze", "Other"],
+          "preset_groups": ["ttm stage", "ttm 70"]
+        },
+        {
+          "name": "Breathtaking View from Bridge",
+          "strategies": ["Standard", "No edge water jump", "Log firsty", "Log firsty, no edge water jump", "Other"],
+          "preset_groups": ["ttm stage", "ttm 70"]
+        },
+        {
+          "name": "Blast to the Lonely Mushroom",
+          "strategies": ["Standard", "Other"],
+          "preset_groups": ["ttm stage", "ttm 70"]
+        }
+      ]
+    },
+    {
+      "stage": "13. Tiny-Huge Island",
+      "stars": [
+        {
+          "name": "Pluck the Piranha Flower",
+          "strategies": ["Standard", "Clockwise", "Other"],
+          "preset_groups": ["thi stage", "thi 70"]
+        },
+        {
+          "name": "The Tip Top of the Huge Island",
+          "strategies": ["Standard", "Left side clip", "Left side clip w/ TJ dive beginning", "No mountain clip (Easier)", "Other"],
+          "preset_groups": ["thi stage", "thi 70"]
+        },
+        {
+          "name": "Rematch with Koopa the Quick",
+          "strategies": ["Standard", "w/ TJ dive beginning", "w/ 14.7~14.9 race time", "Other"],
+          "preset_groups": ["thi stage"]
+        },
+        {
+          "name": "Rematch with Koopa the Quick + 100c",
+          "strategies": ["Standard", "From tiny island", "Other"],
+          "preset_groups": []
+        },
+        {
+          "name": "Five Itty Bitty Secrets",
+          "strategies": ["Standard", "Other"],
+          "preset_groups": ["thi stage", "thi 70"]
+        },
+        {
+          "name": "Wiggler's Red Coins",
+          "strategies": ["Standard", "Other"],
+          "preset_groups": []
+        },
+        {
+          "name": "Wiggler's Red Coins + 100c",
+          "strategies": ["Standard", "5 coins pole route", "Other"],
+          "preset_groups": ["thi stage"]
+        },
+        {
+          "name": "Make Wiggler Squirm",
+          "strategies": ["Standard", "w/ TJ dive beginning", "Other"],
+          "preset_groups": ["thi stage"]
+        }
+      ]
+    },
+    {
+      "stage": "14. Tick Tock Clock",
+      "stars": [
+        {
+          "name": "Roll into the Cage",
+          "strategies": ["Standard", "Rollout onto higher cog", "Time stopped", "Other"],
+          "preset_groups": ["ttc stage"]
+        },
+        {
+          "name": "The Pit and the Pendulums",
+          "strategies": ["Standard", "Rollout onto higher cog", "Time stopped", "Other"],
+          "preset_groups": ["ttc stage"]
+        },
+        {
+          "name": "Get a Hand",
+          "strategies": ["Standard", "Time stopped", "Other"],
+          "preset_groups": ["ttc stage"]
+        },
+        {
+          "name": "Stomp on the Thwomp",
+          "strategies": ["Standard", "Other"],
+          "preset_groups": []
+        },
+        {
+          "name": "Stomp on the Thwomp + 100c",
+          "strategies": ["Standard", "w/ safety red", "Other"],
+          "preset_groups": ["ttc stage"]
+        },
+        {
+          "name": "Timed Jumps on Moving Bars",
+          "strategies": ["Standard", "TJ -> Double WK w/ cog rollout (Fast)", "Other"],
+          "preset_groups": ["ttc stage"]
+        },
+        {
+          "name": "Stop Time for Red Coins",
+          "strategies": ["Standard", "JD ending", "Sideflip -> Wallkick", "Sideflip -> Wallkick + JD ending", "hanoji moving reds", "Usamune moving reds", "Other"],
+          "preset_groups": ["ttc stage"]
+        }
+      ]
+    },
+    {
+      "stage": "15. Rainbow Ride",
+      "stars": [
+        {
+          "name": "Cruiser Crossing the Rainbow",
+          "strategies": ["Standard", "Full WK -> Full SJ", "Left sideflip strat", "Assless w/ full DJ", "Other"],
+          "preset_groups": ["rr stage", "rr 70"]
+        },
+        {
+          "name": "The Big House in the Sky (PAUSE TIME INCLUDED)",
+          "strategies": ["Standard", "JD slide ending", "Usamune (Dezanig) James", "Other"],
+          "preset_groups": ["rr stage"]
+        },
+        {
+          "name": "The Big House in the Sky + 100c",
+          "strategies": ["Standard", "Other"],
+          "preset_groups": []
+        },
+        {
+          "name": "Coins Amassed in a Maze",
+          "strategies": ["Standard", "Kick -> DJ ending", "Other"],
+          "preset_groups": ["rr stage", "rr 70"]
+        },
+        {
+          "name": "Swingin' in the Breeze",
+          "strategies": ["Standard", "Beginning up + Double jump dive ending", "Other"],
+          "preset_groups": ["rr stage", "rr 70"]
+        },
+        {
+          "name": "Tricky Triangles!",
+          "strategies": ["Standard", "Low dive after wallkick", "Other"],
+          "preset_groups": ["rr stage", "rr 70"]
+        },
+        {
+          "name": "Somewhere over the Rainbow",
+          "strategies": ["Standard", "DJ dive into cannon", "Full WK -> Full SJ + SF dive into cannon", "Full WK -> Full SJ + DJ dive into cannon", "Left sideflip + SF dive into cannon", "Left sideflip + DJ dive into cannon", "Assless w/ full DJ + SF dive into cannon", "Assless w/ full DJ + DJ dive into cannon", "Other"],
+          "preset_groups": []
+        },
+        {
+          "name": "Somewhere over the Rainbow + 100c",
+          "strategies": ["Standard", "Other"],
+          "preset_groups": ["rr stage"]
+        }
+      ]
+    },
+    {
+      "stage": "Castle Secret Stars",
+      "stars": [
+        {
+          "name": "Tower of the Wing Cap",
+          "strategies": ["Standard", "Direct rollout on the switch", "Clockwise", "Clockwise + Direct rollout on the switch", "Other"],
+          "preset_groups": []
+        },
+        {
+          "name": "Vanish Cap under the Moat",
+          "strategies": ["Standard", "Expert", "No slope clip (Half cycle)", "Other"],
+          "preset_groups": ["vc"]
+        },
+        {
+          "name": "Cavern of the Metal Cap",
+          "strategies": ["Standard", "Left side -> Turn / LJ (Beginner strat)", "Left side strat (Intermediate strat)", "Other"],
+          "preset_groups": ["hmc stage"]
+        },
+        {
+          "name": "The Secret Aquarium",
+          "strategies": ["Standard", "Other"],
+          "preset_groups": ["jrb stage"]
+        },
+        {
+          "name": "Wing Mario over the Rainbow",
+          "strategies": ["Standard", "Pole red coin early", "Stored angle", "Other"],
+          "preset_groups": ["cloud"]
+        },
+        {
+          "name": "The Princess's Secret Slide",
+          "strategies": ["Standard", "Under 21", "Other"],
+          "preset_groups": []
+        }
+      ]
+    },
+    {
+      "stage": "Bowser Courses",
+      "stars": [
+        {
+          "name": "Bowser in the Dark World Course",
+          "strategies": ["Standard", "BitDW Pillar climb strat", "Other"],
+          "preset_groups": ["dw 0"]
+        },
+        {
+          "name": "Bowser in the Dark World Red Coins",
+          "strategies": ["Standard", "Xiah cycle pipe entry", "Tsukishima cycle pipe entry", "Tsukshima w/ Salt flip pipe entry", "Other"],
+          "preset_groups": ["dw 1"]
+        },
+        {
+          "name": "Bowser in the Dark World Battle",
+          "strategies": ["Standard", "Three-quarter spin", "Bowser dance", "Bowser dance w/o dive rollout", "Other"],
+          "preset_groups": ["dw 0", "dw 1"]
+        },
+        {
+          "name": "Bowser in the Fire Sea Course",
+          "strategies": ["Standard", "No pole glitch", "Ultimate FS", "Ultimate FS w/o speed slidekick", "BLJ w/ full SJ onto elevator + low dive -> SJ ending", "BLJ w/ dive rollout onto elevator + low dive -> SJ ending", "Other"],
+          "preset_groups": ["fs 16"]
+        },
+        {
+          "name": "Bowser in the Fire Sea Red Coins",
+          "strategies": ["Standard", "Other"],
+          "preset_groups": ["fs split 120", "fs 70"]
+        },
+        {
+          "name": "Bowser in the Fire Sea Battle",
+          "strategies": ["Standard", "Half/Three-quarter spin", "Other"],
+          "preset_groups": ["fs split 120", "fs 16", "fs 70"]
+        },
+        {
+          "name": "Bowser in the Sky Course",
+          "strategies": ["Standard", "Beginning Manamo cycle + Left side TJ", "Beginning normal cycle + Right side TJ", "Beginning normal cycle + Left side TJ", "Manamo cycle + Ultimate cycle / TAS LJ", "TAS LJ + Ultimate cycle", "Other"],
+          "preset_groups": ["bits 16/70"]
+        },
+        {
+          "name": "Bowser in the Sky Red Coins",
+          "strategies": ["Standard", "Other"],
+          "preset_groups": ["bits 120"]
+        },
+        {
+          "name": "Bowser in the Sky Battle",
+          "strategies": ["Standard", "Other"],
+          "preset_groups": ["bits 120", "bits 16/70"]
+        }
+      ]
+    },
+    {
+      "stage": "Castle Movement",
+      "stars": [
+        {
+          "name": "Lakitu skip",
+          "strategies": ["Standard", "Other"],
+          "preset_groups": ["dw 0", "dw 1"]
+        },
+        {
+          "name": "LBLJ",
+          "strategies": ["Standard", "Other"],
+          "preset_groups": ["dw 0", "dw 1"]
+        },
+        {
+          "name": "Mips clip (from HMC door)",
+          "strategies": ["Standard", "Other"],
+          "preset_groups": ["mips"]
+        },
+        {
+          "name": "SBLJ",
+          "strategies": ["Standard", "crackslide", "Other"],
+          "preset_groups": ["sblj"]
+        },
+        {
+          "name": "DDD skip",
+          "strategies": ["Standard", "ultimate", "Other"],
+          "preset_groups": ["ddd skip"]
+        },
+        {
+          "name": "BLJ",
+          "strategies": ["Standard", "Other"],
+          "preset_groups": ["blj"]
+        },
+        {
+          "name": "LLL -> moat with Mips",
+          "strategies": ["Standard", "Other"],
+          "preset_groups": ["vc"]
+        }
+      ]
+    }
+  ]
+}

@@ -1,0 +1,177 @@
+.alog {
+  display: flex;
+  flex-direction: column;
+  gap: 0.6rem;
+  padding: 0.9rem 1rem;
+  background: var(--bg-card);
+  border: 1px solid var(--border);
+  border-radius: var(--radius-lg);
+  transition: border-color var(--transition);
+}
+
+.alog--checked {
+  border-color: var(--purple);
+  background: rgba(168,85,247,0.04);
+}
+
+.alog__header {
+  display: flex;
+  align-items: center;
+  gap: 0.6rem;
+  flex-wrap: wrap;
+}
+
+.alog__checkbox {
+  width: 15px; height: 15px;
+  accent-color: var(--purple);
+  cursor: pointer;
+  flex-shrink: 0;
+}
+
+.alog__hdr-actions {
+  margin-left: auto;
+  display: flex;
+  gap: 0.4rem;
+  align-items: center;
+  flex-shrink: 0;
+}
+
+.alog__collapse-btn,
+.alog__close-btn {
+  background: transparent;
+  border: none;
+  color: var(--text-3);
+  font-family: var(--font-mono);
+  font-size: 0.65rem;
+  cursor: pointer;
+  padding: 0.15rem 0.35rem;
+  border-radius: var(--radius);
+  transition: color var(--transition);
+  line-height: 1;
+}
+.alog__collapse-btn:hover { color: var(--text-1); }
+.alog__close-btn:hover    { color: var(--red); }
+
+.alog__title { display: flex; flex-direction: column; gap: 0.15rem; }
+
+.alog__star {
+  font-family: var(--font-display);
+  font-size: 0.9rem;
+  font-weight: 700;
+  color: var(--text-1);
+}
+
+.alog__strategy { font-size: 0.7rem; }
+
+.alog__stats {
+  display: flex;
+  gap: 0.75rem;
+  flex-wrap: wrap;
+  align-items: center;
+}
+
+.alog__stat { font-family: var(--font-mono); font-size: 0.72rem; display: flex; gap: 0.3rem; align-items: baseline; }
+
+/* Entry row */
+.alog__entry {
+  display: flex;
+  align-items: center;
+  gap: 0.5rem;
+  flex-wrap: wrap;
+}
+
+.alog__toggle {
+  font-family: var(--font-mono);
+  font-size: 0.72rem;
+  padding: 0.35rem 0.65rem;
+  border-radius: var(--radius);
+  border: 1px solid;
+  cursor: pointer;
+  transition: all var(--transition);
+  white-space: nowrap;
+}
+
+.alog__toggle--success {
+  border-color: var(--green);
+  color: var(--green);
+  background: transparent;
+}
+.alog__toggle--success:hover { background: var(--green); color: var(--bg); }
+
+.alog__toggle--fail {
+  border-color: var(--red);
+  color: var(--red);
+  background: transparent;
+}
+.alog__toggle--fail:hover { background: var(--red); color: var(--bg); }
+
+.alog__input {
+  background: var(--bg-raised);
+  border: 1px solid var(--border-hi);
+  border-radius: var(--radius);
+  color: var(--text-1);
+  font-family: var(--font-mono);
+  font-size: 0.75rem;
+  padding: 0.35rem 0.6rem;
+  outline: none;
+  width: 110px;
+  transition: border-color var(--transition);
+}
+.alog__input:focus { border-color: var(--star); }
+.alog__input--err { border-color: var(--red); }
+.alog__input--inline { width: 90px; }
+
+.alog__add-btn {
+  background: transparent;
+  border: 1px solid var(--purple);
+  border-radius: var(--radius);
+  color: var(--purple);
+  font-family: var(--font-mono);
+  font-size: 0.72rem;
+  padding: 0.35rem 0.75rem;
+  cursor: pointer;
+  transition: all var(--transition);
+}
+.alog__add-btn:hover { background: var(--purple); color: var(--bg); }
+
+.alog__err { font-size: 0.7rem; color: var(--red); font-family: var(--font-mono); }
+
+/* History */
+.alog__history {
+  display: flex;
+  flex-direction: column;
+  gap: 0.25rem;
+  max-height: 200px;
+  overflow-y: auto;
+  border-top: 1px solid var(--border);
+  padding-top: 0.5rem;
+}
+
+.alog__row {
+  display: grid;
+  grid-template-columns: 60px 80px 1fr;
+  align-items: center;
+  gap: 0.5rem;
+  padding: 0.15rem 0;
+}
+.alog__row--fail { opacity: 0.55; }
+
+.alog__row-date { font-size: 0.65rem; }
+.alog__row-time { font-family: var(--font-mono); font-size: 0.75rem; }
+
+.alog__row-actions { display: flex; gap: 0.4rem; }
+
+.alog__action {
+  background: transparent;
+  border: none;
+  color: var(--text-3);
+  font-family: var(--font-mono);
+  font-size: 0.65rem;
+  cursor: pointer;
+  padding: 0.1rem 0.3rem;
+  border-radius: var(--radius);
+  transition: color var(--transition);
+}
+.alog__action:hover { color: var(--text-1); }
+.alog__action--del:hover { color: var(--red); }
+.alog__action--save:hover { color: var(--green); }

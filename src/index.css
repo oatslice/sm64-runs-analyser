@@ -1,0 +1,81 @@
+:root {
+  --bg:         #0a0a0f;
+  --bg-card:    #111118;
+  --bg-raised:  #18181f;
+  --border:     #2a2a38;
+  --border-hi:  #3d3d52;
+  --star:       #f5c842;
+  --star-dim:   #8a6e1a;
+  --red:        #e84040;
+  --green:      #3dd68c;
+  --blue:       #4a9eff;
+  --purple:     #a855f7;
+  --text-1:     #eeeef5;
+  --text-2:     #9090a8;
+  --text-3:     #55556a;
+  --font-display: 'Syne', sans-serif;
+  --font-mono:    'Space Mono', monospace;
+  --radius:     4px;
+  --radius-lg:  8px;
+  --transition: 150ms ease;
+}
+
+*, *::before, *::after { box-sizing: border-box; margin: 0; padding: 0; }
+html { font-size: 16px; }
+
+body {
+  background: var(--bg);
+  color: var(--text-1);
+  font-family: var(--font-mono);
+  font-size: 0.875rem;
+  line-height: 1.6;
+  min-height: 100vh;
+  background-image: repeating-linear-gradient(
+    0deg, transparent, transparent 2px,
+    rgba(0,0,0,0.08) 2px, rgba(0,0,0,0.08) 4px
+  );
+}
+
+h1, h2, h3, h4 {
+  font-family: var(--font-display);
+  font-weight: 800;
+  letter-spacing: -0.02em;
+  line-height: 1.1;
+}
+
+code, .mono { font-family: var(--font-mono); }
+
+.text-star  { color: var(--star); }
+.text-2     { color: var(--text-2); }
+.text-3     { color: var(--text-3); }
+.text-green { color: var(--green); }
+.text-red   { color: var(--red); }
+.text-blue  { color: var(--blue); }
+
+.card {
+  background: var(--bg-card);
+  border: 1px solid var(--border);
+  border-radius: var(--radius-lg);
+  padding: 1.5rem;
+}
+
+.badge {
+  display: inline-flex;
+  align-items: center;
+  gap: 0.35rem;
+  padding: 0.2rem 0.6rem;
+  border-radius: 2px;
+  font-size: 0.7rem;
+  font-weight: 700;
+  letter-spacing: 0.08em;
+  text-transform: uppercase;
+}
+
+.badge-star { background: rgba(245,200,66,0.12); color: var(--star);  border: 1px solid rgba(245,200,66,0.25); }
+.badge-ok   { background: rgba(61,214,140,0.10); color: var(--green); border: 1px solid rgba(61,214,140,0.2); }
+.badge-warn { background: rgba(232,64,64,0.10);  color: var(--red);   border: 1px solid rgba(232,64,64,0.2); }
+.badge-info { background: rgba(74,158,255,0.10); color: var(--blue);  border: 1px solid rgba(74,158,255,0.2); }
+
+::-webkit-scrollbar { width: 6px; height: 6px; }
+::-webkit-scrollbar-track { background: var(--bg); }
+::-webkit-scrollbar-thumb { background: var(--border-hi); border-radius: 3px; }

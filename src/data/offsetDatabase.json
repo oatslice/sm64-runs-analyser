@@ -1,0 +1,150 @@
+{
+  "_readme": "Offset database for SM64 star timer collections. Structure: { category: { stage: OffsetEntry[] } }. Each entry represents one specific routing choice for that stage in that category. lssName is the exact segment name as it appears in the .lss file. offsetSeconds is the fixed overhead NOT captured by the star timer (transitions, loading zones, door animations, movement between stars). label distinguishes entries within the same stage/category. Fill in offsetSeconds (null = not yet measured).",
+
+  "120 Star": {
+    "Bob-omb Battlefield": [
+      { "label": "6 stars (standard)", "lssName": "BoB", "offsetSeconds": null, "notes": "Castle entry + star select Ã— 6 + course exit" }
+    ],
+    "Whomp's Fortress": [
+      { "label": "6 stars (standard)", "lssName": "WF", "offsetSeconds": null, "notes": "Upstairs door + star select Ã— 6 + course exit" }
+    ],
+    "Jolly Roger Bay": [
+      { "label": "6 stars (standard)", "lssName": "JRB", "offsetSeconds": null, "notes": "Basement door + star select Ã— 6 + course exit" }
+    ],
+    "Cool, Cool Mountain": [
+      { "label": "6 stars (standard)", "lssName": "CCM", "offsetSeconds": null, "notes": "Upstairs door + star select Ã— 6 + course exit" }
+    ],
+    "Big Boo's Haunt": [
+      { "label": "6 stars (standard)", "lssName": "BBH", "offsetSeconds": null, "notes": "BBH door + star select Ã— 6 + course exit" }
+    ],
+    "Hazy Maze Cave": [
+      { "label": "6 stars (standard)", "lssName": "HMC", "offsetSeconds": null, "notes": "Basement door + elevator + star select Ã— 6 + course exit" }
+    ],
+    "Lethal Lava Land": [
+      { "label": "6 stars (standard)", "lssName": "LLL", "offsetSeconds": null, "notes": "Basement door + star select Ã— 6 + course exit" }
+    ],
+    "Shifting Sand Land": [
+      { "label": "6 stars (standard)", "lssName": "SSL", "offsetSeconds": null, "notes": "Basement door + star select Ã— 6 + course exit" }
+    ],
+    "Dire, Dire Docks": [
+      { "label": "6 stars (standard)", "lssName": "DDD", "offsetSeconds": null, "notes": "Basement door + star select Ã— 6 + course exit" }
+    ],
+    "Snowman's Land": [
+      { "label": "6 stars (standard)", "lssName": "SL", "offsetSeconds": null, "notes": "Upstairs 2F door + star select Ã— 6 + course exit" }
+    ],
+    "Wet-Dry World": [
+      { "label": "6 stars (standard)", "lssName": "WDW", "offsetSeconds": null, "notes": "Upstairs 2F door + star select Ã— 6 + course exit" }
+    ],
+    "Tall, Tall Mountain": [
+      { "label": "6 stars (standard)", "lssName": "TTM", "offsetSeconds": null, "notes": "Upstairs 2F door + star select Ã— 6 + course exit" }
+    ],
+    "Tiny-Huge Island": [
+      { "label": "6 stars (standard)", "lssName": "THI", "offsetSeconds": null, "notes": "Upstairs 2F door + star select (tiny + huge) Ã— 6 + course exit" }
+    ],
+    "Tick Tock Clock": [
+      { "label": "6 stars (standard)", "lssName": "TTC", "offsetSeconds": null, "notes": "Upstairs 3F door + star select Ã— 6 + course exit" }
+    ],
+    "Rainbow Ride": [
+      { "label": "6 stars (standard)", "lssName": "RR", "offsetSeconds": null, "notes": "Upstairs 3F door + star select Ã— 6 + course exit" }
+    ],
+    "Castle Secret Stars": [
+      { "label": "6 stars (standard)", "lssName": "Castle Stars", "offsetSeconds": null, "notes": "Overhead for all 6 castle secret stars (cap stages + slide + aquarium)" }
+    ],
+    "Bowser Courses": [
+      { "label": "BitDW + BitFS + BitS (standard)", "lssName": "Bowser", "offsetSeconds": null, "notes": "All three Bowser courses + fights overhead" }
+    ]
+  },
+
+  "70 Star": {
+    "Bob-omb Battlefield": [
+      { "label": "6 stars (standard)", "lssName": "BoB", "offsetSeconds": null, "notes": "Castle entry + star select Ã— 6 + course exit" }
+    ],
+    "Whomp's Fortress": [
+      { "label": "6 stars (standard)", "lssName": "WF", "offsetSeconds": null, "notes": "Upstairs door + star select Ã— 6 + course exit" }
+    ],
+    "Jolly Roger Bay": [
+      { "label": "6 stars (standard)", "lssName": "JRB", "offsetSeconds": null, "notes": "Basement door + star select Ã— 6 + course exit" }
+    ],
+    "Cool, Cool Mountain": [
+      { "label": "6 stars (standard)", "lssName": "CCM", "offsetSeconds": null, "notes": "Upstairs door + star select Ã— 6 + course exit" }
+    ],
+    "Big Boo's Haunt": [
+      { "label": "6 stars (standard)", "lssName": "BBH", "offsetSeconds": null, "notes": "BBH door + star select Ã— 6 + course exit" }
+    ],
+    "Hazy Maze Cave": [
+      { "label": "6 stars (standard)", "lssName": "HMC", "offsetSeconds": null, "notes": "Basement door + elevator + star select Ã— 6 + course exit" }
+    ],
+    "Lethal Lava Land": [
+      { "label": "6 stars (standard)", "lssName": "LLL", "offsetSeconds": null, "notes": "Basement door + star select Ã— 6 + course exit" }
+    ],
+    "Shifting Sand Land": [
+      { "label": "6 stars (standard)", "lssName": "SSL", "offsetSeconds": null, "notes": "Basement door + star select Ã— 6 + course exit" }
+    ],
+    "Dire, Dire Docks": [
+      { "label": "3 stars (standard 70s route)", "lssName": "DDD", "offsetSeconds": null, "notes": "Basement door + star select Ã— 3 + course exit" },
+      { "label": "4 stars", "lssName": "DDD", "offsetSeconds": null, "notes": "Basement door + star select Ã— 4 + course exit" }
+    ],
+    "Snowman's Land": [
+      { "label": "6 stars (standard)", "lssName": "SL", "offsetSeconds": null, "notes": "Upstairs 2F door + star select Ã— 6 + course exit" }
+    ],
+    "Wet-Dry World": [
+      { "label": "6 stars (standard)", "lssName": "WDW", "offsetSeconds": null, "notes": "Upstairs 2F door + star select Ã— 6 + course exit" }
+    ],
+    "Tall, Tall Mountain": [
+      { "label": "6 stars (standard)", "lssName": "TTM", "offsetSeconds": null, "notes": "Upstairs 2F door + star select Ã— 6 + course exit" }
+    ],
+    "Tiny-Huge Island": [
+      { "label": "6 stars (standard)", "lssName": "THI", "offsetSeconds": null, "notes": "Upstairs 2F door + star select Ã— 6 + course exit" }
+    ],
+    "Tick Tock Clock": [
+      { "label": "6 stars (standard)", "lssName": "TTC", "offsetSeconds": null, "notes": "Upstairs 3F door + star select Ã— 6 + course exit" }
+    ],
+    "Rainbow Ride": [
+      { "label": "6 stars (standard)", "lssName": "RR", "offsetSeconds": null, "notes": "Upstairs 3F door + star select Ã— 6 + course exit" }
+    ],
+    "Castle Secret Stars": [
+      { "label": "standard 70s castle stars", "lssName": "Castle Stars", "offsetSeconds": null, "notes": "Overhead for castle secret stars included in 70s route" }
+    ],
+    "Bowser Courses": [
+      { "label": "BitDW + BitFS + BitS (standard)", "lssName": "Bowser", "offsetSeconds": null, "notes": "All three Bowser courses + fights overhead" }
+    ]
+  },
+
+  "16 Star": {
+    "Bob-omb Battlefield": [
+      { "label": "1 star (Big Bob-omb)", "lssName": "BoB", "offsetSeconds": null, "notes": "Castle entry + star select Ã— 1 + course exit" }
+    ],
+    "Whomp's Fortress": [
+      { "label": "1 star (Chip off Whomp's Block)", "lssName": "WF", "offsetSeconds": null, "notes": "Upstairs door + star select Ã— 1 + course exit" }
+    ],
+    "Cool, Cool Mountain": [
+      { "label": "1 star (Slip Slidin' Away)", "lssName": "CCM", "offsetSeconds": null, "notes": "Upstairs door + star select Ã— 1 + course exit" }
+    ],
+    "Hazy Maze Cave": [
+      { "label": "1 star (Metal-Head Mario)", "lssName": "HMC", "offsetSeconds": null, "notes": "Basement door + elevator + star select Ã— 1 + course exit" }
+    ],
+    "Shifting Sand Land": [
+      { "label": "1 star (Pyramid Puzzle)", "lssName": "SSL", "offsetSeconds": null, "notes": "Basement door + star select Ã— 1 + course exit" }
+    ],
+    "Dire, Dire Docks": [
+      { "label": "1 star (Board Bowser's Sub)", "lssName": "DDD", "offsetSeconds": null, "notes": "Basement door + star select Ã— 1 + course exit" }
+    ],
+    "Bowser Courses": [
+      { "label": "BitDW (course + fight)", "lssName": "BitDW", "offsetSeconds": null, "notes": "Door + course entry + fight overhead" },
+      { "label": "BitFS (course + fight)", "lssName": "BitFS", "offsetSeconds": null, "notes": "Basement + course entry + fight overhead" },
+      { "label": "BitS (course only)", "lssName": "BitS", "offsetSeconds": null, "notes": "3F door + course entry overhead" }
+    ]
+  },
+
+  "1 Star": {
+    "Bowser Courses": [
+      { "label": "BitS only (standard 1 star)", "lssName": "BitS", "offsetSeconds": null, "notes": "3F door + course entry overhead" }
+    ]
+  },
+
+  "0 Star": {
+    "Bowser Courses": [
+      { "label": "BitS (0 star fight)", "lssName": "BitS", "offsetSeconds": null, "notes": "3F door + approach overhead" }
+    ]
+  }
+}

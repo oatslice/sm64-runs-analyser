@@ -1,0 +1,137 @@
+.rec-wrap {
+  display: flex;
+  flex-direction: column;
+  gap: 0.75rem;
+}
+
+.rec-header {
+  display: flex;
+  align-items: center;
+  gap: 0.75rem;
+  flex-wrap: wrap;
+}
+
+.rec-title {
+  font-family: var(--font-display);
+  font-size: 0.85rem;
+  font-weight: 700;
+  color: var(--text-1);
+  text-transform: uppercase;
+  letter-spacing: 0.06em;
+}
+
+.rec-reset-badge {
+  font-family: var(--font-mono);
+  font-size: 0.65rem;
+  color: var(--red);
+  background: rgba(232,64,64,0.1);
+  border: 1px solid rgba(232,64,64,0.25);
+  border-radius: var(--radius);
+  padding: 0.15rem 0.5rem;
+}
+
+.rec-desc {
+  font-size: 0.68rem;
+  line-height: 1.5;
+}
+
+.rec-loading {
+  font-size: 0.75rem;
+  padding: 1rem 0;
+}
+
+.rec-list {
+  display: flex;
+  flex-direction: column;
+  gap: 0.4rem;
+}
+
+.rec-row {
+  display: grid;
+  grid-template-columns: 1.5rem 1fr auto;
+  align-items: center;
+  gap: 0.75rem;
+  padding: 0.6rem 0.75rem;
+  background: var(--bg-card);
+  border: 1px solid var(--border);
+  border-radius: var(--radius);
+  transition: border-color var(--transition);
+}
+
+.rec-row:hover { border-color: var(--border-hi); }
+
+.rec-row--top {
+  border-color: rgba(245,200,66,0.3);
+  background: rgba(245,200,66,0.04);
+}
+
+.rec-row__rank {
+  font-family: var(--font-mono);
+  font-size: 0.65rem;
+  color: var(--text-3);
+  text-align: center;
+}
+.rec-row--top .rec-row__rank {
+  color: var(--star);
+  font-weight: 700;
+}
+
+.rec-row__main {
+  display: flex;
+  flex-direction: column;
+  gap: 0.3rem;
+  min-width: 0;
+}
+
+.rec-row__name {
+  font-family: var(--font-mono);
+  font-size: 0.75rem;
+  color: var(--text-1);
+  white-space: nowrap;
+  overflow: hidden;
+  text-overflow: ellipsis;
+}
+
+.rec-row__bar-wrap {
+  height: 3px;
+  background: var(--bg-raised);
+  border-radius: 2px;
+  overflow: hidden;
+}
+
+.rec-row__bar {
+  height: 100%;
+  background: var(--star);
+  border-radius: 2px;
+  opacity: 0.5;
+  transition: width 0.3s ease;
+}
+
+.rec-row__stats {
+  display: flex;
+  gap: 1rem;
+  flex-shrink: 0;
+}
+
+.rec-stat {
+  display: flex;
+  flex-direction: column;
+  align-items: flex-end;
+  gap: 0.1rem;
+  min-width: 52px;
+}
+
+.rec-stat__label {
+  font-family: var(--font-mono);
+  font-size: 0.57rem;
+  color: var(--text-3);
+  text-transform: uppercase;
+  letter-spacing: 0.06em;
+  white-space: nowrap;
+}
+
+.rec-stat__value {
+  font-family: var(--font-mono);
+  font-size: 0.75rem;
+  white-space: nowrap;
+}

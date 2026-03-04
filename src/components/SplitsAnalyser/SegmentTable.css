@@ -1,0 +1,166 @@
+.seg-table-wrap {
+  display: flex;
+  flex-direction: column;
+  gap: 0.75rem;
+  /* Allow horizontal scroll on very narrow viewports */
+  min-width: 0;
+}
+
+.seg-table-header {
+  display: flex;
+  align-items: baseline;
+  justify-content: space-between;
+}
+
+.seg-table-title {
+  font-family: var(--font-display);
+  font-size: 1rem;
+  font-weight: 700;
+  color: var(--text-1);
+}
+
+.seg-table-count {
+  font-size: 0.72rem;
+  font-family: var(--font-mono);
+}
+
+/* Table wrapper scrolls horizontally if viewport is too narrow */
+.seg-table-scroll {
+  overflow-x: auto;
+  border: 1px solid var(--border);
+  border-radius: var(--radius-lg);
+}
+
+/* â”€â”€ Table layout â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€ */
+.seg-table {
+  display: flex;
+  flex-direction: column;
+  min-width: 560px;   /* prevents columns from squishing below readable width */
+}
+
+.seg-table__head,
+.seg-row {
+  display: grid;
+  /* include | name | attempts | golds | pb | mean | std bar */
+  grid-template-columns: 2rem 1fr 5.5rem 5.5rem 5.5rem 5.5rem 1fr;
+  align-items: center;
+}
+
+.seg-table__head {
+  background: var(--bg-raised);
+  border-bottom: 1px solid var(--border);
+  padding: 0.4rem 0;
+}
+
+.seg-row {
+  border-bottom: 1px solid var(--border);
+  transition: background 150ms ease;
+}
+
+.seg-row:last-child { border-bottom: none; }
+.seg-row:hover { background: rgba(255,255,255,0.02); }
+.seg-row--excluded { opacity: 0.4; }
+.seg-row--low-conf .seg-name { color: var(--text-2); }
+
+/* â”€â”€ Columns â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€ */
+.seg-col {
+  padding: 0.55rem 0.6rem;
+  font-size: 0.78rem;
+  white-space: nowrap;
+  overflow: hidden;
+  text-overflow: ellipsis;
+}
+
+.seg-col--include {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  padding: 0.55rem 0.25rem;
+}
+
+.seg-col--name {
+  display: flex;
+  align-items: center;
+  gap: 0.4rem;
+  font-family: var(--font-mono);
+  color: var(--text-1);
+  font-size: 0.75rem;
+  overflow: visible;
+  padding-left: 0.5rem;
+}
+
+.seg-col--num {
+  text-align: right;
+  font-family: var(--font-mono);
+}
+
+.seg-col--bar {
+  padding-right: 0.75rem;
+}
+
+/* Header column labels */
+.seg-table__head .seg-col {
+  font-size: 0.63rem;
+  letter-spacing: 0.1em;
+  text-transform: uppercase;
+  color: var(--text-3);
+  font-weight: 400;
+}
+
+/* â”€â”€ Toggle button â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€ */
+.seg-toggle {
+  background: none;
+  border: none;
+  cursor: pointer;
+  font-size: 0.65rem;
+  line-height: 1;
+  padding: 0.2rem;
+  transition: color 150ms;
+}
+
+.seg-toggle--on  { color: var(--star); }
+.seg-toggle--off { color: var(--text-3); }
+.seg-toggle:hover { transform: scale(1.2); }
+
+/* â”€â”€ Segment name â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€ */
+.seg-name {
+  overflow: hidden;
+  text-overflow: ellipsis;
+  white-space: nowrap;
+}
+
+.seg-warn {
+  color: var(--star);
+  font-size: 0.65rem;
+  flex-shrink: 0;
+  opacity: 0.7;
+}
+
+/* â”€â”€ Mini bar â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€ */
+.seg-bar-wrap {
+  display: flex;
+  align-items: center;
+  gap: 0.4rem;
+}
+
+.mini-bar {
+  flex: 1;
+  height: 3px;
+  background: var(--border);
+  border-radius: 2px;
+  overflow: hidden;
+  min-width: 24px;
+}
+
+.mini-bar__fill {
+  height: 100%;
+  border-radius: 2px;
+  transition: width 400ms ease;
+}
+
+.seg-bar-label {
+  font-size: 0.65rem;
+  white-space: nowrap;
+  min-width: 2.5rem;
+  text-align: right;
+}

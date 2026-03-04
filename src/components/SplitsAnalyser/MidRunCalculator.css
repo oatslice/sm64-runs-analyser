@@ -1,0 +1,198 @@
+.mrc-wrap {
+  display: flex;
+  flex-direction: column;
+  gap: 1rem;
+  background: var(--bg-card);
+  border: 1px solid var(--border);
+  border-radius: var(--radius-lg);
+  padding: 1.25rem 1.5rem;
+}
+
+.mrc-header {
+  display: flex;
+  flex-direction: column;
+  gap: 0.25rem;
+}
+
+.mrc-title {
+  font-family: var(--font-display);
+  font-size: 1rem;
+  font-weight: 700;
+  color: var(--text-1);
+}
+
+.mrc-desc {
+  font-size: 0.75rem;
+}
+
+/* â”€â”€ Controls row â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€ */
+.mrc-controls {
+  display: flex;
+  align-items: flex-end;
+  gap: 0.75rem;
+  flex-wrap: wrap;
+}
+
+.mrc-field {
+  display: flex;
+  flex-direction: column;
+  gap: 0.3rem;
+  flex: 1;
+  min-width: 140px;
+}
+
+.mrc-label {
+  font-size: 0.63rem;
+  letter-spacing: 0.1em;
+  text-transform: uppercase;
+  color: var(--text-3);
+}
+
+.mrc-hint {
+  text-transform: none;
+  letter-spacing: 0;
+  color: var(--star);
+  font-size: 0.63rem;
+}
+
+.mrc-select,
+.mrc-input {
+  background: var(--bg-raised);
+  border: 1px solid var(--border-hi);
+  border-radius: var(--radius);
+  color: var(--text-1);
+  font-family: var(--font-mono);
+  font-size: 0.78rem;
+  padding: 0.45rem 0.65rem;
+  outline: none;
+  transition: border-color var(--transition);
+  width: 100%;
+}
+
+.mrc-select:focus,
+.mrc-input:focus {
+  border-color: var(--star);
+}
+
+.mrc-input--error {
+  border-color: var(--red);
+}
+
+.mrc-select option {
+  background: var(--bg-raised);
+}
+
+/* â”€â”€ Buttons â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€ */
+.mrc-actions {
+  display: flex;
+  gap: 0.5rem;
+  align-self: flex-end;
+  flex-shrink: 0;
+}
+
+.mrc-btn {
+  padding: 0.45rem 1.1rem;
+  border-radius: var(--radius);
+  font-family: var(--font-mono);
+  font-size: 0.75rem;
+  cursor: pointer;
+  transition: background var(--transition), color var(--transition);
+  white-space: nowrap;
+}
+
+.mrc-btn--compute {
+  background: transparent;
+  border: 1px solid var(--purple);
+  color: var(--purple);
+}
+.mrc-btn--compute:hover:not(:disabled) {
+  background: var(--purple);
+  color: var(--bg);
+}
+.mrc-btn--compute:disabled {
+  opacity: 0.4;
+  cursor: not-allowed;
+}
+
+.mrc-btn--clear {
+  background: transparent;
+  border: 1px solid var(--border-hi);
+  color: var(--text-3);
+}
+.mrc-btn--clear:hover {
+  border-color: var(--text-2);
+  color: var(--text-2);
+}
+
+/* â”€â”€ Error â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€ */
+.mrc-error {
+  font-size: 0.75rem;
+  color: var(--red);
+  font-family: var(--font-mono);
+}
+
+/* â”€â”€ Result panel â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€ */
+.mrc-result {
+  display: flex;
+  align-items: center;
+  gap: 1.5rem;
+  padding: 1rem 1.25rem;
+  background: rgba(168,85,247,0.05);
+  border: 1px solid rgba(168,85,247,0.2);
+  border-radius: var(--radius-lg);
+  flex-wrap: wrap;
+  animation: mrc-fadein 0.3s ease;
+}
+
+@keyframes mrc-fadein {
+  from { opacity: 0; transform: translateY(4px); }
+  to   { opacity: 1; transform: translateY(0); }
+}
+
+.mrc-result__stat--main {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 0.2rem;
+  flex-shrink: 0;
+}
+
+.mrc-result__value {
+  font-family: var(--font-display);
+  font-size: 2rem;
+  font-weight: 800;
+  line-height: 1;
+  letter-spacing: -0.03em;
+}
+
+.mrc-result__label {
+  font-size: 0.65rem;
+  letter-spacing: 0.08em;
+  text-transform: uppercase;
+  color: var(--text-3);
+  white-space: nowrap;
+}
+
+.mrc-result__stats {
+  display: flex;
+  gap: 1.25rem;
+  flex-wrap: wrap;
+}
+
+.mrc-result__stat {
+  display: flex;
+  flex-direction: column;
+  gap: 0.2rem;
+}
+
+.mrc-result__sublabel {
+  font-size: 0.62rem;
+  letter-spacing: 0.08em;
+  text-transform: uppercase;
+  color: var(--text-3);
+}
+
+.mrc-result__subval {
+  font-family: var(--font-mono);
+  font-size: 0.82rem;
+}

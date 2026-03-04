@@ -1,0 +1,63 @@
+.py-loader {
+  position: fixed; inset: 0;
+  display: flex; align-items: center; justify-content: center;
+  background: var(--bg); z-index: 9999;
+}
+.py-loader__panel {
+  display: flex; flex-direction: column; align-items: center;
+  gap: 0.75rem; padding: 3rem 2.5rem;
+  background: var(--bg-card); border: 1px solid var(--border);
+  border-radius: var(--radius-lg); max-width: 400px; width: 90%;
+  text-align: center; box-shadow: 0 0 80px rgba(245,200,66,0.04);
+}
+.py-loader__star {
+  font-size: 2.5rem; color: var(--star);
+  animation: star-pulse 2s ease-in-out infinite;
+  line-height: 1; margin-bottom: 0.5rem;
+}
+@keyframes star-pulse {
+  0%, 100% { opacity: 1; transform: scale(1); }
+  50%       { opacity: 0.6; transform: scale(0.92); }
+}
+.py-loader__title {
+  font-family: var(--font-display); font-size: 1.75rem;
+  font-weight: 800; color: var(--text-1); letter-spacing: -0.03em;
+}
+.py-loader__subtitle {
+  font-size: 0.7rem; letter-spacing: 0.18em; text-transform: uppercase;
+  color: var(--text-3); font-family: var(--font-mono); margin-top: -0.25rem;
+}
+.py-loader__progress-wrap {
+  width: 100%; display: flex; flex-direction: column;
+  align-items: center; gap: 0.6rem; margin-top: 1rem;
+}
+.py-loader__bar-track {
+  width: 100%; height: 3px; background: var(--border);
+  border-radius: 2px; overflow: hidden;
+}
+.py-loader__bar-fill {
+  height: 100%; background: var(--star); border-radius: 2px;
+  transition: width 400ms ease; box-shadow: 0 0 8px rgba(245,200,66,0.5);
+}
+.py-loader__status {
+  font-size: 0.75rem; color: var(--text-2);
+  font-family: var(--font-mono); min-height: 1.2em;
+}
+.py-loader__hint { font-size: 0.7rem; color: var(--text-3); line-height: 1.5; margin-top: 0.25rem; }
+.py-loader__error { display: flex; flex-direction: column; align-items: center; gap: 0.6rem; margin-top: 1rem; }
+.py-loader__error-msg { color: var(--red); font-weight: 700; font-size: 0.9rem; }
+.py-loader__error-detail {
+  font-size: 0.72rem; color: var(--text-3); font-family: var(--font-mono);
+  background: var(--bg-raised); padding: 0.5rem 0.75rem;
+  border-radius: var(--radius); border: 1px solid var(--border);
+  width: 100%; word-break: break-all;
+}
+.py-loader__error-hint { font-size: 0.72rem; color: var(--text-2); line-height: 1.5; }
+.py-loader__retry {
+  margin-top: 0.5rem; padding: 0.55rem 1.5rem;
+  background: transparent; border: 1px solid var(--star); color: var(--star);
+  font-family: var(--font-mono); font-size: 0.78rem; letter-spacing: 0.06em;
+  border-radius: var(--radius); cursor: pointer;
+  transition: background var(--transition), color var(--transition);
+}
+.py-loader__retry:hover { background: var(--star); color: var(--bg); }

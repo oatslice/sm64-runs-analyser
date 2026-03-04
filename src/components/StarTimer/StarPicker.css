@@ -1,0 +1,67 @@
+.star-picker {
+  display: flex;
+  gap: 0.5rem;
+  flex-wrap: wrap;
+  align-items: center;
+}
+
+.star-picker--compact {
+  gap: 0.4rem;
+}
+
+.star-picker__select {
+  background: var(--bg-raised);
+  border: 1px solid var(--border-hi);
+  border-radius: var(--radius);
+  color: var(--text-1);
+  font-family: var(--font-mono);
+  font-size: 0.75rem;
+  padding: 0.4rem 0.6rem;
+  outline: none;
+  transition: border-color var(--transition);
+  flex: 1;
+  min-width: 120px;
+}
+
+.star-picker__select:focus { border-color: var(--star); }
+.star-picker__select:disabled { opacity: 0.4; cursor: not-allowed; }
+.star-picker__select option { background: var(--bg-raised); }
+
+.star-picker__btn {
+  background: transparent;
+  border: 1px solid var(--star);
+  border-radius: var(--radius);
+  color: var(--star);
+  font-family: var(--font-mono);
+  font-size: 0.75rem;
+  padding: 0.4rem 0.9rem;
+  cursor: pointer;
+  white-space: nowrap;
+  transition: background var(--transition), color var(--transition);
+  flex-shrink: 0;
+}
+
+.star-picker__btn:hover:not(:disabled) {
+  background: var(--star);
+  color: var(--bg);
+}
+
+.star-picker__btn:disabled {
+  opacity: 0.35;
+  cursor: not-allowed;
+}
+
+.star-picker__custom-input {
+  background: var(--bg-raised);
+  border: 1px solid var(--purple);
+  border-radius: var(--radius);
+  color: var(--text-1);
+  font-family: var(--font-mono);
+  font-size: 0.75rem;
+  padding: 0.4rem 0.6rem;
+  outline: none;
+  flex: 1;
+  min-width: 120px;
+  transition: border-color var(--transition);
+}
+.star-picker__custom-input:focus { border-color: var(--star); }

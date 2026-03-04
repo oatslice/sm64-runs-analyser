@@ -1,0 +1,207 @@
+/* â”€â”€ Layout â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€ */
+.sa-wrap { display: flex; flex-direction: column; gap: 1rem; }
+
+.sa-empty {
+  display: flex; flex-direction: column; align-items: center;
+  gap: 2rem; padding: 3rem 1rem;
+}
+.sa-empty__intro { text-align: center; display: flex; flex-direction: column; gap: 0.5rem; }
+.sa-empty__title { font-family: var(--font-display); font-size: 1.4rem; color: var(--text-1); }
+.sa-empty__desc { font-size: 0.85rem; max-width: 480px; }
+
+/* â”€â”€ Header â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€ */
+.sa-header {
+  display: flex; align-items: flex-start; justify-content: space-between;
+  gap: 1rem; flex-wrap: wrap;
+}
+.sa-header__left { display: flex; flex-direction: column; gap: 0.35rem; }
+.sa-header__right { display: flex; align-items: center; gap: 0.6rem; flex-shrink: 0; flex-wrap: wrap; }
+
+.sa-title-row { display: flex; align-items: center; gap: 0.75rem; flex-wrap: wrap; }
+.sa-game { font-family: var(--font-display); font-size: 1.1rem; color: var(--text-1); }
+
+.sa-meta { display: flex; align-items: center; gap: 0.5rem; flex-wrap: wrap; font-size: 0.75rem; }
+.sa-meta__dot { width: 3px; height: 3px; border-radius: 50%; background: var(--border-hi); }
+
+.sa-compute-btn {
+  background: transparent; border: 1px solid var(--star); border-radius: var(--radius);
+  color: var(--star); font-family: var(--font-mono); font-size: 0.75rem;
+  padding: 0.45rem 1rem; cursor: pointer; transition: all var(--transition);
+}
+.sa-compute-btn:hover:not(:disabled) { background: var(--star); color: var(--bg); }
+.sa-compute-btn:disabled { opacity: 0.4; cursor: not-allowed; }
+
+.sa-change-btn {
+  background: transparent; border: 1px solid var(--border-hi); border-radius: var(--radius);
+  color: var(--text-3); font-family: var(--font-mono); font-size: 0.72rem;
+  padding: 0.4rem 0.8rem; cursor: pointer; transition: all var(--transition);
+}
+.sa-change-btn:hover { border-color: var(--text-2); color: var(--text-1); }
+
+/* â”€â”€ Filter toggle button â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€ */
+.sa-filter-btn {
+  position: relative;
+  background: transparent; border: 1px solid var(--border-hi); border-radius: var(--radius);
+  color: var(--text-3); font-family: var(--font-mono); font-size: 0.72rem;
+  padding: 0.4rem 0.8rem; cursor: pointer; transition: all var(--transition);
+}
+.sa-filter-btn:hover { border-color: var(--purple); color: var(--purple); }
+.sa-filter-btn--active { border-color: var(--purple); color: var(--purple); }
+
+.sa-filter-badge {
+  position: absolute; top: -6px; right: -6px;
+  background: var(--purple); color: var(--bg);
+  font-size: 0.6rem; font-weight: 700; border-radius: 99px;
+  padding: 1px 5px; line-height: 1.4;
+}
+
+/* â”€â”€ Filters panel â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€ */
+.sa-filters {
+  display: flex; flex-direction: column; gap: 0.75rem;
+  background: var(--bg-card); border: 1px solid var(--border);
+  border-radius: var(--radius-lg); padding: 1rem 1.25rem;
+}
+.sa-filters__title {
+  font-size: 0.72rem; text-transform: uppercase; letter-spacing: 0.09em;
+  color: var(--text-3); font-family: var(--font-mono); font-weight: 600;
+  display: flex; align-items: center; gap: 0.75rem;
+}
+.sa-filters__hint { text-transform: none; letter-spacing: 0; font-weight: 400; font-size: 0.68rem; }
+
+.sa-filters__row {
+  display: flex; gap: 1.5rem; flex-wrap: wrap;
+}
+
+.sa-filter-field { display: flex; flex-direction: column; gap: 0.3rem; }
+
+.sa-filter-label {
+  font-size: 0.63rem; text-transform: uppercase; letter-spacing: 0.09em;
+  color: var(--text-3); font-family: var(--font-mono);
+}
+
+.sa-filter-input-row { display: flex; align-items: center; gap: 0.6rem; flex-wrap: wrap; }
+
+.sa-filter-input {
+  background: var(--bg-raised); border: 1px solid var(--border-hi);
+  border-radius: var(--radius); color: var(--text-1);
+  font-family: var(--font-mono); font-size: 0.76rem;
+  padding: 0.4rem 0.65rem; outline: none; width: 100px;
+  transition: border-color var(--transition);
+}
+.sa-filter-input:focus { border-color: var(--star); }
+.sa-filter-hint { font-size: 0.65rem; }
+
+.sa-filter-clear {
+  align-self: flex-start;
+  background: transparent; border: 1px solid var(--red); border-radius: var(--radius);
+  color: var(--red); font-family: var(--font-mono); font-size: 0.68rem;
+  padding: 0.3rem 0.7rem; cursor: pointer; transition: all var(--transition);
+}
+.sa-filter-clear:hover { background: var(--red); color: var(--bg); }
+
+/* â”€â”€ Body â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€ */
+.sa-body {
+  display: grid;
+  grid-template-columns: minmax(320px, 400px) 1fr;
+  gap: 1rem; align-items: start;
+}
+@media (max-width: 900px) {
+  .sa-body { grid-template-columns: 1fr; }
+}
+
+.sa-col { display: flex; flex-direction: column; gap: 1rem; }
+
+/* â”€â”€ State messages â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€ */
+.sa-computing {
+  display: flex; align-items: center; gap: 0.5rem;
+  font-family: var(--font-mono); font-size: 0.75rem; color: var(--text-3);
+}
+.sa-computing__spinner {
+  color: var(--star); animation: spin 1s linear infinite; display: inline-block;
+}
+@keyframes spin { to { transform: rotate(360deg); } }
+
+.sa-error {
+  background: rgba(232,64,64,0.08); border: 1px solid var(--red);
+  border-radius: var(--radius); padding: 0.6rem 1rem;
+  font-size: 0.75rem; color: var(--red);
+}
+
+.sa-recompute-hint {
+  align-self: flex-start;
+  background: transparent; border: 1px dashed var(--border-hi); border-radius: var(--radius);
+  color: var(--text-3); font-family: var(--font-mono); font-size: 0.7rem;
+  padding: 0.35rem 0.75rem; cursor: pointer; transition: all var(--transition);
+}
+.sa-recompute-hint:hover:not(:disabled) { border-color: var(--star); color: var(--star); }
+.sa-recompute-hint:disabled { opacity: 0.4; cursor: not-allowed; }
+
+/* â”€â”€ PB probability box â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€ */
+.sa-pbbox {
+  background: rgba(61,214,140,0.04);
+  border: 1px solid rgba(61,214,140,0.2);
+  border-radius: var(--radius-lg);
+  padding: 1rem 1.25rem;
+  display: flex; flex-direction: column; gap: 0.75rem;
+}
+
+.sa-pbbox__title {
+  font-size: 0.65rem; text-transform: uppercase; letter-spacing: 0.1em;
+  color: var(--text-3); font-family: var(--font-mono); font-weight: 600;
+}
+
+.sa-pbbox__stats {
+  display: flex; align-items: center; gap: 1.5rem; flex-wrap: wrap;
+}
+
+.sa-pbbox__main {
+  display: flex; flex-direction: column; align-items: center;
+  gap: 0.15rem; flex-shrink: 0;
+}
+
+.sa-pbbox__value {
+  font-family: var(--font-display); font-size: 2rem;
+  font-weight: 800; line-height: 1; letter-spacing: -0.03em;
+}
+
+.sa-pbbox__label {
+  font-size: 0.58rem; text-transform: uppercase; letter-spacing: 0.07em;
+  color: var(--text-3); white-space: nowrap; text-align: center;
+}
+
+.sa-pbbox__breakdown {
+  display: flex; flex-direction: column; gap: 0.35rem; flex: 1;
+}
+
+.sa-pbbox__row {
+  display: flex; justify-content: space-between; align-items: baseline;
+  gap: 1rem; font-family: var(--font-mono); font-size: 0.75rem;
+}
+.sa-pbbox__row span:first-child { white-space: nowrap; }
+.sa-pbbox__row span:last-child  { white-space: nowrap; text-align: right; }
+
+.sa-pbbox__row--highlight {
+  background: rgba(245,200,66,0.07); border-radius: var(--radius);
+  padding: 0.25rem 0.5rem; margin: 0 -0.5rem;
+}
+
+.sa-pbbox__divider {
+  height: 1px; background: rgba(61,214,140,0.15); margin: 0.1rem 0;
+}
+
+.sa-pbbox__etpb {
+  font-family: var(--font-display); font-size: 1rem;
+  font-weight: 700; color: var(--star);
+}
+
+.sa-pbbox__small {
+  font-size: 0.65rem; color: var(--text-3);
+}
+
+/* â”€â”€ Shared badges â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€ */
+.badge {
+  display: inline-flex; align-items: center;
+  padding: 0.15rem 0.55rem; border-radius: 99px;
+  font-size: 0.65rem; font-family: var(--font-mono); letter-spacing: 0.05em;
+}
+.badge-star { background: rgba(245,200,66,0.12); color: var(--star); border: 1px solid rgba(245,200,66,0.25); }
