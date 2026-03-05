@@ -1,3 +1,4 @@
+
 """
 convolution.py  â€”  SM64 Splits Analysis Engine
 Runs inside Pyodide (NumPy + SciPy available).
@@ -51,10 +52,16 @@ def _kde_pdf(times, x_grid):
     return pdf
 
 
+# Maximum number of grid points per segment. At resolution=0.1s this caps the
+# per-segment grid at 10,000 points (1,000 seconds span), which is more than
+# enough for any real SM64 segment. This prevents timer-left-running outliers
+# from inflating the grid and crashing the browser even after IQR trimming.
+_MAX_GRID_POINTS = 10_000
+
 def _build_common_grid(all_times_list, resolution=0.1, padding_factor=1.3):
     """
     Build a shared time grid that spans the range of all observed times,
-    with some right-padding.
+    with some right-padding. Capped at _MAX_GRID_POINTS as a safety net.
     """
     flat = np.concatenate([np.asarray(t, dtype=float) for t in all_times_list if len(t) > 0])
     flat = flat[np.isfinite(flat)]
@@ -64,6 +71,11 @@ def _build_common_grid(all_times_list, resolution=0.1, padding_factor=1.3):
     lo = 0.0
     hi = flat.max() * padding_factor
     n_points = int(np.ceil((hi - lo) / resolution)) + 1
+
+    # Hard cap: if outliers survived IQR trimming, clamp the grid rather than crash.
+    if n_points > _MAX_GRID_POINTS:
+        n_points = _MAX_GRID_POINTS
+
     return np.linspace(lo, hi, n_points)
 
 
@@ -257,3 +269,4 @@ def compute_reset_stats(segment_reset_rates):
 
 
 print("âœ“ SM64 analysis engine loaded")
+
